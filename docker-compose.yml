@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:4000"  # Відкриваємо порт 5000 на хості і направляємо на порт 4000 контейнера
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/usr/src/app  # Монтуючи локальний код в контейнер (для зручності при розробці)
+    command: npm run dev  # Для розвитку (або змініть на "npm start" для продакшн)
