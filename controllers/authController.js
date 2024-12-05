@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-const User = require("../models/user");
+const User = require("../models/User");
 const Unit = require("../models/Unit");
 const generateToken = require("../utils/generateToken");
 require("dotenv").config(); 

@@ -1,10 +1,10 @@
 const UsedResources = require('../models/UsedResources');
 const Resources = require('../models/Resource');
 const Units = require('../models/Unit');
-const Users = require('../models/user');
+const Users = require('../models/User');
 const Resource = require('../models/Resource');
 const Unit = require('../models/Unit');
-const User = require('../models/user');
+const User = require('../models/User');
 
 const createUsedResource = async (req, res) => {
   try {
